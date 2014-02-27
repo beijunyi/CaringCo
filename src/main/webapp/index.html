@@ -4,43 +4,27 @@
   <meta charset="utf-8">
   <title>Caring & Co</title>
   <link rel="stylesheet" href="lib/Bootstrap/css/bootstrap.min.css">
-  <!--<link rel="stylesheet" href="lib/Bootstrap/css/bootstrap-theme.min.css">-->
   <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
 
-<div class="site-wrapper">
-  <div class="site-wrapper-inner">
-    <div class="cover-container">
-
-      <div class="masthead clearfix">
-        <div class="inner">
-          <h3 class="masthead-brand">Cover</h3>
-          <ul class="nav masthead-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="inner cover">
-        <h1 class="cover-heading">Cover your page.</h1>
-        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-        <p class="lead">
-          <a href="#" class="btn btn-lg btn-default">Learn more</a>
-        </p>
-      </div>
-
-      <div class="mastfoot">
-        <div class="inner">
-          <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-        </div>
-      </div>
-
+<section id="content">
+  <div class="main-container">
+    <div class="container-bar top main-background"></div>
+    <div class="container-brand">
+      <img src="/resources/images/brand.png">
     </div>
+    <div ng-view></div>
+    <div class="container-nav bottom">
+      <a>Home</a>
+      <span>/</span>
+      <a>About</a>
+      <span>/</span>
+      <a>Contact</a>
+    </div>
+    <div class="container-bar bottom main-background"></div>
   </div>
-</div>
+</section>
 
 <script src="lib/JQuery/jquery-2.1.0.min.js"></script>
 <script src="lib/Bootstrap/js/bootstrap.min.js"></script>
