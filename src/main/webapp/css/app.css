@@ -23,7 +23,7 @@ body {
 }
 
 .highlight {
-  color: #52c3f1;
+  color: #52c3f1 !important;
 }
 
 .body-background {
