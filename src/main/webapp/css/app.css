@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
 body {
   color: #a0a1a1;
   font-family: "Arial", sans-serif;
@@ -116,7 +121,7 @@ body {
 
 .home-text {
   position: absolute;
-  width: 350px;
+  width: 370px;
   padding: 180px 40px 40px 40px;
 
   font-size: 14px;
@@ -124,15 +129,66 @@ body {
 
 .about-text-mask-title {
   position: absolute;
-  top: 305px;
-  left: 20px;
+  top: 314px;
+  left: 22px;
 }
 
 .about-text-mask {
   position: absolute;
-  top: 332px;
+  top: 337px;
   width: 624px;
-  height: 135px;
+  height: 130px;
+}
+
+.contact-table {
+  position: absolute;
+  table-layout: fixed;
+  top: 430px;
+  width: 100%;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.contact-table > tbody > tr > td {
+  padding: 0 70px 70px 70px;
+}
+
+.contact-icon {
+  background-repeat: no-repeat;
+  padding: 0 0 20px 30px;
+  cursor: pointer;
+}
+
+.contact-tel {
+  background-image: url("/resources/images/tel_inactive.png");
+}
+
+.contact-tel:hover {
+  background-image: url("/resources/images/tel_active.png");
+}
+
+.contact-website {
+  background-image: url("/resources/images/website_inactive.png");
+}
+
+.contact-website:hover {
+  background-image: url("/resources/images/website_active.png");
+}
+
+.contact-email {
+  background-image: url("/resources/images/email_inactive.png");
+}
+
+.contact-email:hover {
+  background-image: url("/resources/images/email_active.png");
+}
+
+.contact-address {
+  background-image: url("/resources/images/address_inactive.png");
+}
+
+.contact-address:hover {
+  background-image: url("/resources/images/address_active.png");
 }
 
 /*a,*/
