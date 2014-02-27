@@ -1,5 +1,4 @@
 body {
-  background-color: lightgray;
   color: #a0a1a1;
 }
 
@@ -25,6 +24,15 @@ body {
 
 .highlight {
   color: #52c3f1;
+}
+
+.body-background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 
 .main-background {
