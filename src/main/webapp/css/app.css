@@ -1,5 +1,6 @@
 body {
   color: #a0a1a1;
+  font-family: "Arial", sans-serif;
 }
 
 .left {
@@ -24,6 +25,26 @@ body {
 
 .highlight {
   color: #52c3f1 !important;
+}
+
+.text-mask-title {
+  font-size: 23px;
+  font-weight: bold;
+  color: #00c2e5;
+  z-index: 500;
+}
+
+.text-mask {
+  background-color: rgba(0, 207, 238, 0.76);
+  padding: 20px;
+  z-index: 500;
+}
+
+.text-mask span {
+  color: #ffffff;
+  font-size: 11px;
+  display: block;
+  line-height: 13px;
 }
 
 .body-background {
@@ -69,7 +90,6 @@ body {
   padding: 30px;
 
   text-align: center;
-  font-family: "Arial", sans-serif;
   font-size: 15px;
   font-weight: bold;
 }
@@ -87,16 +107,28 @@ body {
   position: absolute;
   top: 100px;
   left: 0;
+  z-index: 100;
 }
 
 .home-text {
   position: absolute;
-
   width: 350px;
   padding: 180px 40px 40px 40px;
 
-  font-family: "Arial", sans-serif;
   font-size: 14px;
+}
+
+.about-text-mask-title {
+  position: absolute;
+  top: 305px;
+  left: 20px;
+}
+
+.about-text-mask {
+  position: absolute;
+  top: 332px;
+  width: 624px;
+  height: 135px;
 }
 
 /*a,*/
