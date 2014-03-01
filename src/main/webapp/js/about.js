@@ -3,8 +3,8 @@
 var DEFAULT_TITLE = 'INTRODUCTION';
 var DEFAULT_DETAILS = 'At Caring & Co. we seek to find and provide high quality and innovative medical products to prolong life and ease suffering. We are committed to build up bidirectional connections between Europe and China in healthcare, and to introduce high standard western medical products and healthcare system to China, and to introduce products from Chinese manufacturers into Europe. We are keen to work with individuals and companies eager to contribute to this rapidly emerging network of opportunity and growth.';
 
-var DR_MIAORONG_TSE_TITLE = 'Dr. Miaorong Tse';
-var DR_MIAORONG_TSE_DETAILS = 'Dr. Xie is currently the Vice-Principal of Beijing Friendship Hospital and an expert in cardiovascular disease with over 25 years of experience in the medical field. He previously served as the hospital’s Chief Executive of Medical Administration, and as the Head of the Outpatient and Emergency Department. He has an intimate understanding of the Chinese healthcare system and a great deal of experience in managing general hospitals. He advocates improving the Chinese healthcare system through high standard academic and technical exchange with western hospitals.';
+var DR_MIAORONG_XIE_TITLE = 'Dr. Miaorong Xie';
+var DR_MIAORONG_XIE_DETAILS = 'Dr. Xie is currently the Vice-Principal of Beijing Friendship Hospital and an expert in cardiovascular disease with over 25 years of experience in the medical field. He previously served as the hospital’s Chief Executive of Medical Administration, and as the Head of the Outpatient and Emergency Department. He has an intimate understanding of the Chinese healthcare system and a great deal of experience in managing general hospitals. He advocates improving the Chinese healthcare system through high standard academic and technical exchange with western hospitals.';
 
 var DR_YUHONG_SHE_TITLE = 'Dr. Yuhong She';
 var DR_YUHONG_SHE_DETAILS = 'Dr. She is an expert plastic surgeon, the Principal of Dr. She Yu Hong Aesthetic Plastic Surgery Clinic, the founder of Chinese Medical Association Ningbo Plastic Surgery, and a member Asian Pacific Academy of Cosmetic Surgery and American Society of Plastic Surgery. Dr. She has been a visiting scholar at universities in the US and Singapore, and is enthusiastic about improving the standard of Chinese plastic surgery by introducing cutting-edged technology to Chinese market.';
@@ -68,10 +68,10 @@ app.controller('AboutController', ['$scope', function ($scope) {
     });
   };
 
-  $scope.showDrMiaoRongTse = function () {
+  $scope.showDrMiaoRongXie = function () {
     easeOut(function () {
-      $scope.title = DR_MIAORONG_TSE_TITLE;
-      $scope.details = DR_MIAORONG_TSE_DETAILS;
+      $scope.title = DR_MIAORONG_XIE_TITLE;
+      $scope.details = DR_MIAORONG_XIE_DETAILS;
     });
   };
 

@@ -79,7 +79,7 @@ a {
 }
 
 .main-background {
-  background-color: #6fccf2;
+  background-color: #ffffff;
 }
 
 .main-container {
@@ -174,6 +174,7 @@ a {
 .about-honorary-advisors {
   padding-right: 15px;
   font-size: 10px;
+  line-height: 12px;
 }
 
 .about-honorary-advisors li {
@@ -215,7 +216,7 @@ a {
 
 tr.contact-icon td {
   background-repeat: no-repeat;
-  padding: 0 0 20px 30px;
+  padding: 0 0 5px 30px;
   cursor: pointer;
 }
 
