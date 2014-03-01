@@ -19,31 +19,88 @@ app.controller('AboutController', ['$scope',
     $scope.title = DEFAULT_TITLE;
     $scope.details = DEFAULT_DETAILS;
 
+    function easeOut(fn) {
+      var titleEl = $('#about-title');
+      var detailsEl = $('#about-details');
+      titleEl.stop();
+      detailsEl.stop();
+      function easeIn() {
+        titleEl.animate(
+          {
+            left: 22,
+            opacity: 1
+          }, {
+            easing: 'linear',
+            duration: 200
+          }
+        );
+        detailsEl.animate(
+          {
+            opacity: 1
+          }, {
+            duration: 200
+          }
+        );
+      }
+
+      titleEl.animate(
+        {
+          left: 10,
+          opacity: 0
+        }, {
+          easing: 'linear',
+          duration: 200,
+          start: function() {
+            detailsEl.animate(
+              {
+                opacity: 0
+              }, {
+                duration: 200
+              }
+            );
+          },
+          complete: function() {
+            fn();
+            $scope.$apply();
+            easeIn();
+          }
+        }
+      );
+    }
+
     $scope.showDefault = function() {
-      $scope.title = DEFAULT_TITLE;
-      $scope.details = DEFAULT_DETAILS;
+      easeOut(function() {
+        $scope.title = DEFAULT_TITLE;
+        $scope.details = DEFAULT_DETAILS;
+      });
     };
 
     $scope.showDrMiaoRongTse = function() {
-      $scope.title = DR_MIAORONG_TSE_TITLE;
-      $scope.details = DR_MIAORONG_TSE_DETAILS;
+      easeOut(function() {
+        $scope.title = DR_MIAORONG_TSE_TITLE;
+        $scope.details = DR_MIAORONG_TSE_DETAILS;
+      });
     };
 
     $scope.showDrYuhongShe = function() {
-      $scope.title = DR_YUHONG_SHE_TITLE;
-      $scope.details = DR_YUHONG_SHE_DETAILS;
+      easeOut(function() {
+        $scope.title = DR_YUHONG_SHE_TITLE;
+        $scope.details = DR_YUHONG_SHE_DETAILS;
+      });
     };
 
     $scope.showMrYeLiu = function() {
-      $scope.title = MR_YE_LIU_TITLE;
-      $scope.details = MR_YE_LIU_DETAILS;
+      easeOut(function() {
+        $scope.title = MR_YE_LIU_TITLE;
+        $scope.details = MR_YE_LIU_DETAILS;
+      });
     };
 
     $scope.showBusinessPartners = function() {
-      $scope.title = BUSINESS_PARTNERS_TITLE;
-      $scope.details = BUSINESS_PARTNERS_DETAILS;
+      easeOut(function() {
+        $scope.title = BUSINESS_PARTNERS_TITLE;
+        $scope.details = BUSINESS_PARTNERS_DETAILS;
+      });
     };
-
-    $scope.showDefault();
   }
 ]);

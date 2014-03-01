@@ -3,25 +3,25 @@
   <span id="about-title" class="text-mask-title about-text-mask-title">{{title}}</span>
 
   <div class="text-mask left about-text-mask">
-    <p ng-bind-html="details"></p>
+    <p id="about-details" ng-bind-html="details"></p>
   </div>
 
-  <div class="about-gallery-column">
+  <div class="about-gallery-column" ng-mouseleave="showDefault()">
     <span class="about-gallery-column-title">HONORARY ADVISORS</span>
     <ul class="about-honorary-advisors">
-      <li ng-mouseenter="showDrMiaoRongTse()" ng-mouseleave="showDefault()">
+      <li ng-mouseenter="showDrMiaoRongTse()">
         <img src="/resources/images/sample_person1.png">
         <p>
           <span class="highlight">Dr. Miaorong Tse</span> is currently the Vice-Principal of Beijing Friendship Hospital and an expert in cardiovascular disease with over 25 years of experience in the medical field. He previously served as the hospital’s Chief Executive of Medical Administration, and as the Head of the Outpatient and Emergency Department. He has ... <a class="highlight">(More)</a>
         </p>
       </li>
-      <li ng-mouseenter="showDrYuhongShe()" ng-mouseleave="showDefault()">
+      <li ng-mouseenter="showDrYuhongShe()">
         <img src="/resources/images/sample_person2.png">
         <p>
           <span class="highlight">Dr. Yuhong She</span> is an expert plastic surgeon, the Principal of Dr. She Yu Hong Aesthetic Plastic Surgery Clinic, the founder of Chinese Medical Association Ningbo Plastic Surgery, and a member Asian Pacific Academy of Cosmetic Surgery and American Society of Plastic Surgery. Dr. She has been a visiting scholar at ... <a class="highlight">(More)</a>
         </p>
       </li>
-      <li ng-mouseenter="showMrYeLiu()" ng-mouseleave="showDefault()">
+      <li ng-mouseenter="showMrYeLiu()">
         <img src="/resources/images/sample_person2.png">
         <p>
           <span class="highlight">Mr. Ye Liu</span> is Chairman and General Manager of Xiuhe Medical Technique Co., Ltd. He was previously the Director of the medical division and Deputy General Manager in EPS China. EPS China is one of the leading providers and manufacturers of medicine to the medicine sector in China and Japan. Prior to becoming deputy general ... <a class="highlight">(More)</a>
@@ -29,7 +29,7 @@
       </li>
     </ul>
     <span class="about-gallery-column-title">BUSINESS PARTNERS</span>
-    <ul class="about-business-partners" ng-mouseenter="showBusinessPartners()" ng-mouseleave="showDefault()">
+    <ul class="about-business-partners" ng-mouseenter="showBusinessPartners()">
       <li>
         Beijing Xiuhe Medical Technique Co., Ltd
       </li>
