@@ -176,6 +176,7 @@ a {
 .about-honorary-advisors li {
   padding: 5px 0;
   height: 100px;
+  cursor: pointer;
 }
 
 .about-honorary-advisors img {
@@ -185,6 +186,7 @@ a {
 
 .about-business-partners {
   padding-top: 2px;
+  cursor: pointer;
 }
 
 .about-business-partners li {
