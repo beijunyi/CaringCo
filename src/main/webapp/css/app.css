@@ -182,7 +182,9 @@ a {
 
 .about-honorary-advisors img {
   float: left;
-  padding-right: 15px;
+  margin-right: 15px;
+  height: 84px;
+  width: 69px;
 }
 
 .about-business-partners {
