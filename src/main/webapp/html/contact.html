@@ -4,13 +4,13 @@
     <tr>
       <td>
         <table>
-          <tr>
-            <td class="contact-icon contact-tel">
+          <tr id="contact-tel" class="contact-icon contact-tel">
+            <td ng-mouseenter="hoverStart($event)" ng-mouseleave="hoverEnd($event)">
               Tel：+44(0) 20 3561 4685
             </td>
           </tr>
-          <tr>
-            <td class="contact-icon contact-website">
+          <tr id="contact-website" class="contact-icon contact-website">
+            <td ng-mouseenter="hoverStart($event)" ng-mouseleave="hoverEnd($event)">
               www.thecaring.co.uk
             </td>
           </tr>
@@ -18,8 +18,8 @@
       </td>
       <td>
         <table>
-          <tr>
-            <td class="contact-icon contact-email">
+          <tr id="contact-email" class="contact-icon contact-email">
+            <td ng-mouseenter="hoverStart($event)" ng-mouseleave="hoverEnd($event)">
               Business enquires:<br/>
               b.enquiry@caring.co.uk
             </td>
@@ -28,11 +28,11 @@
       </td>
       <td>
         <table>
-          <tr>
-            <td class="contact-icon contact-address">
-              73 Woods House, 7 Gatliff Rd,
-              Grosvenor Waterside, London,
-              United Kingdom
+          <tr id="contact-address" class="contact-icon contact-address">
+            <td ng-mouseenter="hoverStart($event)" ng-mouseleave="hoverEnd($event)">
+              73 Woods House, 7 Gatliff Rd,<br/>
+              Grosvenor Waterside, London,<br/>
+              United Kingdom<br/>
               SW1W 8DE
             </td>
           </tr>

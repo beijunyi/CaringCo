@@ -43,7 +43,8 @@ a {
   bottom: 0;
 }
 
-.highlight {
+.highlight,
+.hovered {
   color: #52c3f1 !important;
 }
 
@@ -201,46 +202,47 @@ a {
   width: 100%;
   font-size: 10px;
   line-height: 16px;
+  padding-left: 20px;
 }
 
 .contact-table > tbody > tr > td {
-  padding: 0 70px 70px 70px;
+  padding: 0 50px 70px 50px;
 }
 
-.contact-icon {
+tr.contact-icon td {
   background-repeat: no-repeat;
   padding: 0 0 20px 30px;
   cursor: pointer;
 }
 
-.contact-tel {
+tr.contact-tel td {
   background-image: url("/resources/images/tel_inactive.png");
 }
 
-.contact-tel:hover {
+tr.contact-tel td.hovered {
   background-image: url("/resources/images/tel_active.png");
 }
 
-.contact-website {
+tr.contact-website td {
   background-image: url("/resources/images/website_inactive.png");
 }
 
-.contact-website:hover {
+tr.contact-website td.hovered  {
   background-image: url("/resources/images/website_active.png");
 }
 
-.contact-email {
+tr.contact-email td {
   background-image: url("/resources/images/email_inactive.png");
 }
 
-.contact-email:hover {
+tr.contact-email td.hovered  {
   background-image: url("/resources/images/email_active.png");
 }
 
-.contact-address {
+tr.contact-address td {
   background-image: url("/resources/images/address_inactive.png");
 }
 
-.contact-address:hover {
+tr.contact-address td.hovered {
   background-image: url("/resources/images/address_active.png");
 }

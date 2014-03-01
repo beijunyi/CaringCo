@@ -13,94 +13,87 @@ var MR_YE_LIU_DETAILS = 'Mr. Liu is Chairman and General Manager of Xiuhe Medica
 var BUSINESS_PARTNERS_TITLE = 'BUSINESS PARTNERS';
 var BUSINESS_PARTNERS_DETAILS = 'Beijing Xiuhe Medical Technique Co., Ltd<br/>Dr. She Yu Hong Aesthetic Plastic Surgery Clinic';
 
-app.controller('AboutController', ['$scope',
-  function($scope) {
+app.controller('AboutController', ['$scope', function ($scope) {
 
-    $scope.title = DEFAULT_TITLE;
-    $scope.details = DEFAULT_DETAILS;
+  $scope.title = DEFAULT_TITLE;
+  $scope.details = DEFAULT_DETAILS;
 
-    function easeOut(fn) {
-      var titleEl = $('#about-title');
-      var detailsEl = $('#about-details');
-      titleEl.stop();
-      detailsEl.stop();
-      function easeIn() {
-        titleEl.animate(
-          {
-            left: 22,
-            opacity: 1
-          }, {
-            easing: 'linear',
-            duration: 200
-          }
-        );
-        detailsEl.animate(
-          {
-            opacity: 1
-          }, {
-            duration: 200
-          }
-        );
-      }
-
-      titleEl.animate(
-        {
-          left: 10,
-          opacity: 0
+  function easeOut(fn) {
+    var titleEl = $('#about-title');
+    var detailsEl = $('#about-details');
+    titleEl.stop();
+    detailsEl.stop();
+    function easeIn() {
+      titleEl.animate({
+          left: 22,
+          opacity: 1
         }, {
           easing: 'linear',
-          duration: 200,
-          start: function() {
-            detailsEl.animate(
-              {
-                opacity: 0
-              }, {
-                duration: 200
-              }
-            );
-          },
-          complete: function() {
-            fn();
-            $scope.$apply();
-            easeIn();
-          }
-        }
-      );
+          duration: 200
+        });
+      detailsEl.animate({
+          opacity: 1
+        }, {
+          duration: 200
+        });
     }
 
-    $scope.showDefault = function() {
-      easeOut(function() {
-        $scope.title = DEFAULT_TITLE;
-        $scope.details = DEFAULT_DETAILS;
+    titleEl.animate({
+        left: 10,
+        opacity: 0
+      }, {
+        easing: 'linear',
+        duration: 200,
+        start: function () {
+          detailsEl.animate({
+              opacity: 0
+            }, {
+              duration: 200
+            });
+        },
+        complete: function () {
+          fn();
+          $scope.$apply();
+          easeIn();
+        }
       });
-    };
-
-    $scope.showDrMiaoRongTse = function() {
-      easeOut(function() {
-        $scope.title = DR_MIAORONG_TSE_TITLE;
-        $scope.details = DR_MIAORONG_TSE_DETAILS;
-      });
-    };
-
-    $scope.showDrYuhongShe = function() {
-      easeOut(function() {
-        $scope.title = DR_YUHONG_SHE_TITLE;
-        $scope.details = DR_YUHONG_SHE_DETAILS;
-      });
-    };
-
-    $scope.showMrYeLiu = function() {
-      easeOut(function() {
-        $scope.title = MR_YE_LIU_TITLE;
-        $scope.details = MR_YE_LIU_DETAILS;
-      });
-    };
-
-    $scope.showBusinessPartners = function() {
-      easeOut(function() {
-        $scope.title = BUSINESS_PARTNERS_TITLE;
-        $scope.details = BUSINESS_PARTNERS_DETAILS;
-      });
-    };
   }
+
+  $scope.showDefault = function () {
+    easeOut(function () {
+      $scope.title = DEFAULT_TITLE;
+      $scope.details = DEFAULT_DETAILS;
+    });
+  };
+
+  $scope.showDrMiaoRongTse = function () {
+    easeOut(function () {
+      $scope.title = DR_MIAORONG_TSE_TITLE;
+      $scope.details = DR_MIAORONG_TSE_DETAILS;
+    });
+  };
+
+  $scope.showDrYuhongShe = function () {
+    easeOut(function () {
+      $scope.title = DR_YUHONG_SHE_TITLE;
+      $scope.details = DR_YUHONG_SHE_DETAILS;
+    });
+  };
+
+  $scope.showMrYeLiu = function () {
+    easeOut(function () {
+      $scope.title = MR_YE_LIU_TITLE;
+      $scope.details = MR_YE_LIU_DETAILS;
+    });
+  };
+
+  $scope.showBusinessPartners = function () {
+    easeOut(function () {
+      $scope.title = BUSINESS_PARTNERS_TITLE;
+      $scope.details = BUSINESS_PARTNERS_DETAILS;
+    });
+  };
+
+
+}
 ]);
