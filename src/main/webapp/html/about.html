@@ -1,51 +1,43 @@
 <div>
   <img class="container-image left" src="/resources/images/about_image.png">
-  <span class="text-mask-title about-text-mask-title">INTRODUCTION</span>
+  <span id="about-title" class="text-mask-title about-text-mask-title">{{title}}</span>
 
   <div class="text-mask left about-text-mask">
-    <span>
-Caring & Co., Ltd is a privately owned, import and export trading company based in London, United
-Kingdom. It works closely with many medical equipment companies, distributors
-and hospitals in China and helps them to select,
-evaluate and introduce superior medical products from Europe.<br/><br/>
-
-Caring & Co., Ltd is a privately owned, import and export trading company based in London, United
-Kingdom. It works closely with many medical equipment companies, distributors
-and hospitals in China and helps them to select,
-evaluate and introduce superior medical products from Europe.
-    </span>
+    <p ng-bind-html="details"></p>
   </div>
 
   <div class="about-gallery-column">
     <span class="about-gallery-column-title">HONORARY ADVISORS</span>
     <ul class="about-honorary-advisors">
-      <li>
+      <li ng-mouseenter="showDrMiaoRongTse()" ng-mouseleave="showDefault()">
         <img src="/resources/images/sample_person1.png">
         <p>
-          <span class="highlight">Dr. Miaorong Tse</span> is a privately owned, import and export trading company based in London,United Kingdom. It works closely with many medical equipment companies, distributors and hospitals in China and helps them to select, evaluate and introduce superior medical
+          <span class="highlight">Dr. Miaorong Tse</span> is currently the Vice-Principal of Beijing Friendship Hospital and an expert in cardiovascular disease with over 25 years of experience in the medical field. He previously served as the hospital’s Chief Executive of Medical Administration, and as the Head of the Outpatient and Emergency Department. He has ... <a class="highlight">(More)</a>
         </p>
       </li>
-      <li>
+      <li ng-mouseenter="showDrYuhongShe()" ng-mouseleave="showDefault()">
         <img src="/resources/images/sample_person2.png">
         <p>
-          <span class="highlight">Dr. Miaorong Tse</span> is a privately owned, import and export trading company based in London,United Kingdom. It works closely with many medical equipment companies, distributors and hospitals in China and helps them to select, evaluate and introduce
+          <span class="highlight">Dr. Yuhong She</span> is an expert plastic surgeon, the Principal of Dr. She Yu Hong Aesthetic Plastic Surgery Clinic, the founder of Chinese Medical Association Ningbo Plastic Surgery, and a member Asian Pacific Academy of Cosmetic Surgery and American Society of Plastic Surgery. Dr. She has been a visiting scholar at ... <a class="highlight">(More)</a>
         </p>
       </li>
-      <li>
+      <li ng-mouseenter="showMrYeLiu()" ng-mouseleave="showDefault()">
         <img src="/resources/images/sample_person2.png">
         <p>
-          <span class="highlight">Dr. Miaorong Tse</span> is a privately owned, import and export trading company based in London,United Kingdom. It works closely with many medical equipment companies, distributors and hospitals in China and helps them to select, evaluate and introduce superior medical
+          <span class="highlight">Mr. Ye Liu</span> is Chairman and General Manager of Xiuhe Medical Technique Co., Ltd. He was previously the Director of the medical division and Deputy General Manager in EPS China. EPS China is one of the leading providers and manufacturers of medicine to the medicine sector in China and Japan. Prior to becoming deputy general ... <a class="highlight">(More)</a>
         </p>
       </li>
     </ul>
-    <span class="about-gallery-column-title">BUSINESS PARTNERS</span>
-    <ul class="about-business-partners">
-      <li>
-        Beijing Xiuhe Medical Technique Co., Ltd
-      </li>
-      <li>
-        Dr. She Yu Hong Aesthetic Plastic Surgery Clinic
-      </li>
-    </ul>
+    <div ng-mouseenter="showBusinessPartners()" ng-mouseleave="showDefault()">
+      <span class="about-gallery-column-title">BUSINESS PARTNERS</span>
+      <ul class="about-business-partners">
+        <li>
+          Beijing Xiuhe Medical Technique Co., Ltd
+        </li>
+        <li>
+          Dr. She Yu Hong Aesthetic Plastic Surgery Clinic
+        </li>
+      </ul>
+    </div>
   </div>
 </div>

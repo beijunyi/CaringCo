@@ -19,6 +19,10 @@ p {
   margin: 0;
 }
 
+a {
+  cursor: pointer;
+}
+
 .left {
   position: absolute;
   left: 0;
@@ -51,14 +55,16 @@ p {
 
 .text-mask {
   background-color: rgba(0, 207, 238, 0.76);
-  padding: 20px;
+  padding: 0 25px;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 15px;
+  display: table;
 }
 
-.text-mask span {
-  color: #ffffff;
-  font-size: 11px;
-  display: block;
-  line-height: 13px;
+.text-mask p {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .body-background {
@@ -132,15 +138,14 @@ p {
 
 .home-text {
   position: absolute;
-  width: 370px;
+  width: 360px;
   padding: 180px 40px 40px 40px;
-
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .about-text-mask-title {
   position: absolute;
-  top: 314px;
+  top: 310px;
   left: 22px;
 }
 
@@ -175,7 +180,7 @@ p {
 
 .about-honorary-advisors img {
   float: left;
-  padding-right: 20px;
+  padding-right: 15px;
 }
 
 .about-business-partners {
