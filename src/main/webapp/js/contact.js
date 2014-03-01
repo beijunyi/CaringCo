@@ -1,3 +1,5 @@
+//Authored by http://www.beijunyi.com on 1st March 2014
+
 var HOVER_ITEMS = ['contact-tel', 'contact-website', 'contact-email', 'contact-address'];
 
 app.controller('ContactController', ['$scope', '$timeout', function ($scope, $timeout) {

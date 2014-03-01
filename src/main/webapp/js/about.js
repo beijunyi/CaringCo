@@ -1,3 +1,5 @@
+//Authored by http://www.beijunyi.com on 1st March 2014
+
 var DEFAULT_TITLE = 'INTRODUCTION';
 var DEFAULT_DETAILS = 'At Caring & Co. we seek to find and provide high quality and innovative medical products to prolong life and ease suffering. We are committed to build up bidirectional connections between Europe and China in healthcare, and to introduce high standard western medical products and healthcare system to China, and to introduce products from Chinese manufacturers into Europe. We are keen to work with individuals and companies eager to contribute to this rapidly emerging network of opportunity and growth.';
 

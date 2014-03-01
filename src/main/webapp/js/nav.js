@@ -1,3 +1,5 @@
+//Authored by http://www.beijunyi.com on 1st March 2014
+
 app.controller('NavigationController', ['$scope', '$rootScope', '$location', function ($scope, $rootScope, $location) {
   $(document).keydown(function (e) {
 

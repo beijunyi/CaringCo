@@ -1,3 +1,5 @@
+//Authored by http://www.beijunyi.com on 1st March 2014
+
 var app = angular.module('CaringCo', ['ngRoute', 'ngSanitize']);
 
 app.config(['$routeProvider',
