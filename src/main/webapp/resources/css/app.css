@@ -215,37 +215,42 @@ a {
 tr.contact-icon td {
   background-repeat: no-repeat;
   padding: 0 0 5px 30px;
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 
 tr.contact-tel td {
   background-image: url("../images/tel_inactive.png");
 }
 
-tr.contact-tel td.hovered {
-  background-image: url("../images/tel_active.png");
-}
+/*tr.contact-tel td.hovered {*/
+  /*background-image: url("../images/tel_active.png");*/
+/*}*/
 
 tr.contact-website td {
   background-image: url("../images/website_inactive.png");
 }
 
-tr.contact-website td.hovered  {
-  background-image: url("../images/website_active.png");
-}
+/*tr.contact-website td.hovered  {*/
+  /*background-image: url("../images/website_active.png");*/
+/*}*/
 
 tr.contact-email td {
-  background-image: url("../images/email_inactive.png");
+  background-image: url("../images/email_active.png");
+  cursor: pointer;
 }
 
-tr.contact-email td.hovered  {
-  background-image: url("../images/email_active.png");
-}
+/*tr.contact-email td {*/
+  /*background-image: url("../images/email_inactive.png");*/
+/*}*/
+
+/*tr.contact-email td.hovered  {*/
+  /*background-image: url("../images/email_active.png");*/
+/*}*/
 
 tr.contact-address td {
   background-image: url("../images/address_inactive.png");
 }
 
-tr.contact-address td.hovered {
-  background-image: url("../images/address_active.png");
-}
+/*tr.contact-address td.hovered {*/
+  /*background-image: url("../images/address_active.png");*/
+/*}*/
