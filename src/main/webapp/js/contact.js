@@ -2,7 +2,7 @@
 
 var HOVER_ITEMS = ['contact-tel', 'contact-website', 'contact-email', 'contact-address'];
 
-app.controller('ContactController', ['$scope', '$timeout', function ($scope, $timeout) {
+app.controller('ContactController', ['$scope', '$timeout', '$window', function ($scope, $timeout, $window) {
   var interrupt = false;
   var promise = undefined;
 
@@ -79,6 +79,10 @@ app.controller('ContactController', ['$scope', '$timeout', function ($scope, $ti
   $scope.$on('$destroy', function(){
     $timeout.cancel(promise);
   });
+
+  $scope.email = function() {
+    $window.location = "mailto:enquiries@caring.co.uk"
+  };
 
   resetTimer(1000);
 }
